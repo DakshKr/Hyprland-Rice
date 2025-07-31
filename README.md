@@ -61,7 +61,7 @@ A list of my most used custom keyboard shortcuts. (Super = windows/cmd key)
 This setup wouldn't be possible without the work of these amazing creators and projects. My configuration is a blend of their ideas and my own customizations.
 
 * **DIMFLIX:** For the original scripts for managing brightness, volume, and system updates.
-* **Meowrch:** For inspiration and ideas related to ricing along with many original scripts.[This is an external link to https://github.com/meowrch/meowrch](Link)
-* **Keyitdev:** For the beautiful `sddm-astronaut-theme`. [This is an external link to https://github.com/Keyitdev/sddm-astronaut-theme](Link)
-* **ViegPhunt** For such great open-source dotfiles [This is an external link to https://github.com/ViegPhunt/Dotfiles](Link)
+* **Meowrch:** For inspiration and ideas related to ricing along with many original scripts. [Link](This is an external link to https://github.com/meowrch/meowrch)
+* **Keyitdev:** For the beautiful `sddm-astronaut-theme`. [Link](This is an external link to https://github.com/Keyitdev/sddm-astronaut-theme)
+* **ViegPhunt** For such great open-source dotfiles [Link](This is an external link to https://github.com/ViegPhunt/Dotfiles)
 * And other amazing developers in the open-source community whose work has been an inspiration.
