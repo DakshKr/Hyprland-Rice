@@ -1,0 +1,68 @@
+/**
+ * A bigger theme for clipboard history.
+ */
+
+configuration {
+    font:           "JetBrainsMono Nerd Font 28";
+    show-icons:     false;
+}
+
+* {
+    background-color:   #1a1b26;
+    text-color:         #c0caf5;
+    border-color:       #414868;
+    highlight:          #414868;
+}
+
+window {
+    background-color:   @background-color;
+    width:              1400px;
+    border:             2px;
+    border-radius:      16px;
+    padding:            30px;
+}
+
+mainbox {
+    children:   [ inputbar, listview ];
+    spacing:    20px;
+}
+
+inputbar {
+    background-color:   @highlight;
+    border-radius:      12px;
+    padding:            16px;
+    children:           [ prompt, entry ];
+}
+
+prompt {
+    background-color:   inherit;
+    text-color:         #bb9af7;
+}
+
+entry {
+    margin: 0px 30px;
+    background-color:   inherit;
+    placeholder:        "filter history";
+}
+
+listview {
+    border:         0px;
+    scrollbar:      false;
+    spacing:        12px;
+    lines:          5;
+}
+
+element {
+    padding:        15px;
+    border-radius:  12px;
+}
+
+element-text {
+    background-color:   inherit;
+    text-color:         inherit;
+    vertical-align:     0.5;
+}
+
+element selected {
+    background-color:   @highlight;
+}

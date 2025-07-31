@@ -1,0 +1,173 @@
+{
+  "layer": "top",
+  "position": "top",
+  "mod": "dock",
+  "height": 30,
+  "exclusive": true,
+  "passthrough": false,
+  "gtk-layer-shell": true,
+  "reload_style_on_change": true,
+
+  //==> Modules Layout
+  ///////////////////////////////////////////////////////////////
+  "modules-left": ["wlr/taskbar", "custom/r_end", "custom/padd"],
+  "modules-center": ["custom/l_end", "hyprland/workspaces", "custom/r_end"],
+  "modules-right": [
+    "custom/l_end",
+    "clock",
+    "custom/r_end",
+    "custom/l_end",
+
+    "group/control-panel"
+  ],
+
+  "group/control-panel": {
+    "orientation": "horizontal",
+    "modules": [
+      "custom/notification-control",
+      "custom/mic_control",
+      "custom/battery",
+      "custom/power"
+    ]
+  },
+
+  //==> Left Modules
+  ///////////////////////////////////////////////////////////////
+  "hyprland/workspaces": {
+    "rotate": 0,
+    "all-outputs": true,
+    "active-only": false,
+    "on-click": "activate",
+    "disable-scroll": false,
+    "on-scroll-up": "hyprctl dispatch workspace -1",
+    "on-scroll-down": "hyprctl dispatch workspace +1",
+    "persistent-workspaces": {}
+  },
+  "wlr/taskbar": {
+    "format": "{icon}",
+    "rotate": 0,
+    "icon-size": 18,
+    "icon-theme": "Tela-circle-dracula",
+    "spacing": 0,
+    "tooltip-format": "{title}",
+    "on-click": "activate",
+    "on-click-middle": "close",
+    "app_ids-mapping": {
+      "firefoxdeveloperedition": "firefox-developer-edition"
+    }
+  },
+
+  //==> Right Modules
+  ///////////////////////////////////////////////////////////////
+  "clock": {
+    "format": "{:%I:%M %p}",
+    "rotate": 0,
+    "format-alt": "{:%R | 󰃭 %d·%m·%y}",
+    "tooltip-format": "<tt>{calendar}</tt>",
+    "calendar": {
+      "mode": "month",
+      "mode-mon-col": 3,
+      "on-scroll": 1,
+      "on-click-right": "mode",
+      "format": {
+        "months": "<span color='#ffead3'><b>{}</b></span>",
+        "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+        "today": "<span color='#ff6699'><b>{}</b></span>"
+      }
+    },
+    "actions": {
+      "on-click-right": "mode",
+      "on-click-forward": "tz_up",
+      "on-click-backward": "tz_down",
+      "on-scroll-up": "shift_up",
+      "on-scroll-down": "shift_down"
+    }
+  },
+
+  "custom/battery": {
+    "exec": "sh ~/bin/battery.sh --status --discharged-color \"#f38ba8\" --charged-color \"#a6e3a1\" | cat",
+    "return-type": "raw",
+    "format": "{}  ",
+    "interval": 3,
+    "rotate": 0,
+    "on-click": "sh ~/bin/battery.sh --notify",
+    "tooltip": false
+  },
+  "custom/brightness": {
+    "exec": "sh ~/bin/brightness.sh --status --color \"#61afef\" | cat",
+    "return-type": "raw",
+    "format": "{}  ",
+    "interval": 1,
+    "rotate": 0,
+    "on-scroll-up": "sh ~/bin/brightness.sh --up",
+    "on-scroll-down": "sh ~/bin/brightness.sh --down",
+    "on-click": "sh ~/bin/brightness.sh --maxb",
+    "on-click-right": "sh ~/bin/brightness.sh --min",
+    "tooltip": false
+  },
+
+  "custom/mic_control": {
+    "exec": "sh ~/bin/mic_control.sh --device input --status --disabled-color \"#f38ba8\" --enabled-color \"#a6e3a1\" | cat",
+    "return-type": "raw",
+    "format": "{}",
+    "interval": 1,
+    "rotate": 0,
+    "on-click": "sh ~/bin/mic_control.sh --device input --action toggle",
+    "on-click-right": "sh ~/bin/mic_control.sh --device input --action control",
+    "scroll-step": 5,
+    "tooltip": false
+  },
+
+  "custom/notification-control": {
+    "exec": "sh ~/bin/notification-control.sh --status --disabled-color \"#f38ba8\" --enabled-color \"#a6e3a1\"", // Use the new script name
+    "return-type": "raw",
+    "format": "{} ",
+    "interval": 1, // Updates every 1 second, as before
+    "rotate": 0,
+    "on-click": "sh ~/bin/notification-control.sh --left-click", // LEFT CLICK: Opens SwayNC center
+    "on-click-right": "sh ~/bin/notification-control.sh --right-click", // RIGHT CLICK: Toggles Dunst DND
+    "tooltip": false // As before
+  },
+
+  "custom/networkmanager": {
+    "exec": "sh ~/bin/rofi-menus/network-manager.sh --status --disabled-color \"#f38ba8\" --enabled-color \"#a6e3a1\" | cat",
+    "return-type": "raw",
+    "format": "{}  ",
+    "interval": 3,
+    "rotate": 0,
+    "on-click": "sh ~/bin/rofi-menus/network-manager.sh",
+    "tooltip": false
+  },
+  "custom/power": {
+    "on-click": "sh  ~/.config/rofi/powermenu.sh",
+    "format": "<span color=\"#f38ba8\"> </span>",
+    "rotate": 0,
+    "tooltip": false
+  },
+
+  //==> Other Modules
+  ///////////////////////////////////////////////////////////////
+  "custom/l_end": {
+    "format": " ",
+    "interval": "once",
+    "tooltip": false
+  },
+
+  "custom/r_end": {
+    "format": " ",
+    "interval": "once",
+    "tooltip": false
+  },
+
+  "custom/padd": {
+    "format": "  ",
+    "interval": "once",
+    "tooltip": false
+  },
+
+  "custom/padd_bg": {
+    "format": "  ",
+    "interval": "once",
+    "tooltip": false
+  }
+}

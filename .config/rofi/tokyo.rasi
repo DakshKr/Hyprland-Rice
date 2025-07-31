@@ -1,0 +1,20 @@
+* {
+  /* Catppuccin Mocha Palette - The foundation of the Meowrch theme */
+  bg0     : #1e1e2e;  /* Base */
+  bg1     : #414868;  /* Surface0 */
+  bg2     : #414868;  /* Surface1 */
+  bg3     : #414868;  /* Overlay0 */
+  fg0     : #c0caf5;  /* Text */
+  fg1     : #929abfff;  /* Subtext1 */
+  fg2     : #a6adc8;  /* Subtext0 */
+  red     : #f38ba8;  /* Red */
+  green   : #a6e3a1;  /* Green */
+  yellow  : #f9e2af;  /* Yellow */
+  blue    : #bb9af7;  /* Blue */
+  magenta : #cba6f7;  /* Mauve */
+  cyan    : #929abfff;  /* Teal */
+
+  /* Unchanged structure as requested */
+  accent: @red;
+  urgent: @yellow;
+}

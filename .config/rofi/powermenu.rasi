@@ -1,0 +1,61 @@
+/**
+ * A vertical, 1x5 grid Rofi power menu theme.
+ */
+
+configuration {
+    font:           "JetBrainsMono Nerd Font Bold 42";
+    show-icons:     false;
+}
+
+* {
+    /* Colors from Catppuccin Mocha */
+    bg-color:           #1e1e2e;
+    bg-alt-color:       #181825;
+    fg-color:           #cdd6f4;
+    selected-color:     #c0caf5;
+    urgent-color:       #f38ba8;
+
+    background-color:   transparent;
+    text-color:         @fg-color;
+}
+
+window {
+    background-color:   @bg-color;
+    width:              700px;
+    border:             2px;
+    border-color:       @selected-color;
+    border-radius:      16px;
+    padding:            30px;
+}
+
+mainbox {
+    children:   [ listview ];
+    spacing:    20px;
+}
+
+listview {
+    border:         0px;
+    scrollbar:      false;
+    spacing:        10px;
+    /* CHANGED: Switched to a vertical 1x5 grid */
+    lines:          5;
+    columns:        1;
+    layout:         vertical;
+}
+
+element {
+    padding:        12px;
+    border-radius:  8px;
+}
+
+element-text {
+    background-color:   inherit;
+    text-color:         inherit;
+    vertical-align:     0.5;
+    horizontal-align:   0.0; /* Align text to the left */
+}
+
+element selected {
+    background-color:   @selected-color;
+    text-color:         @bg-color;
+}

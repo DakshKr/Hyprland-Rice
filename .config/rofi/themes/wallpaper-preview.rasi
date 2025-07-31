@@ -1,0 +1,51 @@
+/* Rofi theme for wallpaper previews */
+* {
+    background-color: #1e1e2e; /* Catppuccin Macchiato Base */
+    text-color: #cdd6f4; /* Catppuccin Macchiato Text */
+}
+
+window {
+    width: 80%;
+    height: 36%;
+    border: 2px;
+    border-color: #89b4fa; /* Catppuccin Macchiato Blue */
+    border-radius: 12px;
+}
+
+mainbox {
+    children: [listview];
+}
+
+listview {
+    columns: 4; /* Number of wallpapers per row */
+    lines: 1;   /* Number of rows */
+    layout: vertical;
+    spacing: 20px;
+    padding: 2px;
+    margin: 40px;
+}
+
+element {
+    orientation: vertical;
+    padding: 10px;
+    border-radius: 8px;
+}
+element-icon {
+    size: 512px;
+    cursor: pointer;
+}
+
+element-text {
+      enabled: false;
+    horizontal-align: 0.5; /* Center the text */
+    cursor: pointer;
+}
+
+element selected {
+    background-color: #313244; /* Catppuccin Macchiato Surface0 */
+    border-radius: 12px;
+}
+
+inputbar {
+    padding: 12px;
+}
