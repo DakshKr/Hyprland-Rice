@@ -52,3 +52,15 @@ A list of my most used custom keyboard shortcuts. (Super = windows/cmd key)
 | `Super + Q`         | Close Active Window           |
 | `Super + E`         | Open File Manager             |
 | `Super + F`         | Open Web Browser (Firefox)    |
+
+
+
+---
+## Credits & Acknowledgements
+
+This setup wouldn't be possible without the work of these amazing creators and projects. My configuration is a blend of their ideas and my own customizations.
+
+* **DIMFLIX:** For the original scripts for managing brightness, volume, and system updates.
+* **Meowrch:** For inspiration and ideas related to ricing along with many original scripts.
+* **Keyitdev:** For the beautiful `sddm-astronaut-theme`.
+* And other amazing developers in the open-source community whose work has been an inspiration.
