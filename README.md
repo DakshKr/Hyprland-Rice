@@ -2,7 +2,29 @@
 
 My personal dotfiles for a minimal and productive Arch Linux setup running on Wayland.
 
----
+--------------------------------------------------------------------------------------------------
+
+
+* **Home**
+  ![screenshot-1](.github/home.png)
+
+* **Cava and Yt-music**
+  ![screenshot-1](.github/cava-ytmusic.png)
+
+* **Rofi-Menus**
+  ![screenshot-1](.github/rofi_menu_1.png)
+  ![screenshot-1](.github/rofi_menu_2.png)
+
+* **Terminal**
+  ![screenshot-1](.github/terminal-fastfetch.png)
+
+
+* **btop and swyanc**
+  ![screenshot-1](.github/btop-swaync.png)
+
+
+--------------------------------------------------------------------------------------------------
+
 
 ## About The Setup
 
