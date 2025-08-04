@@ -9,18 +9,18 @@ My personal dotfiles for a minimal and productive Arch Linux setup running on Wa
   ![screenshot-1](.github/home.png)
 
 * **Cava and Yt-music**
-  ![screenshot-1](.github/cava-ytmusic.png)
+  ![screenshot-2](.github/cava-ytmusic.png)
 
 * **Rofi-Menus**
-  ![screenshot-1](.github/rofi_menu_1.png)
-  ![screenshot-1](.github/rofi_menu_2.png)
+  ![screenshot-3](.github/rofi_menu_1.png)
+  ![screenshot-4](.github/rofi_menu_2.png)
 
 * **Terminal**
-  ![screenshot-1](.github/terminal-fastfetch.png)
+  ![screenshot-5](.github/terminal-fastfetch.png)
 
 
 * **btop and swyanc**
-  ![screenshot-1](.github/btop-swaync.png)
+  ![screenshot-6](.github/btop-swaync.png)
 
 
 --------------------------------------------------------------------------------------------------
